@@ -21,7 +21,7 @@ else:
     two = player1
 print(f'Поздравляю {one} ты ходишь первым !')
 
-con = int(2021)
+con = 202
 count = 0
 print(f'На столе лежит {con} конфета')
 while con > 0:
