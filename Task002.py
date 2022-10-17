@@ -9,6 +9,10 @@ from turtle import goto
 clear=lambda:os.system('cls')
 clear()
 
+
+con = 202
+count = 0
+step_max = 28
 player1 = input('Введите имя первого игрока ')
 player2 = input('Введите имя второго игрока ')
 print('Определим правило первого хода')
@@ -20,17 +24,14 @@ else:
     one = player2
     two = player1
 print(f'Поздравляю {one} ты ходишь первым !')
-
-con = 202
-count = 0
 print(f'На столе лежит {con} конфета')
 while con > 0:
     if count == 0:
         step = int(input(f'{one} бери конфеты '))
         if step > con:
             print('Столько конфет нет.Попробуй снова!')
-        elif step > 28:
-            print('Максимальный ход 28 конфет!')
+        elif step > step_max:
+            print(f'Максимальный ход {step_max} конфет!')
         else:
            con = con-step
            if con > 0:
@@ -41,8 +42,8 @@ while con > 0:
         step = int(input(f'{two} бери конфеты '))
         if step > con:
             print('Столько конфет нет.Попробуй снова!')
-        elif step > 28:
-            print('Максимальный ход 28 конфет.Попробуй снова!')
+        elif step > step_max:
+            print(f'Максимальный ход {step_max} конфет.Попробуй снова!')
         else:
             con = con-step
             if con > 0:
