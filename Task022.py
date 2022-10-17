@@ -11,7 +11,6 @@ player1 = input('Я Маруся! Давай поиграем? Kak твое им
 player2 = 'Бот-Маруся'
 print('Определим правило первого хода')
 a = randint(0, 1)
-print(a)
 if a == 0:
     count = 0
     print(f'{player1} делай первый ход!')
