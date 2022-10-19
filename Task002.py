@@ -10,7 +10,7 @@ clear=lambda:os.system('cls')
 clear()
 
 
-con = 202
+con = 2021
 count = 0
 step_max = 28
 player1 = input('Введите имя первого игрока ')
